@@ -1,0 +1,19 @@
+name: OreSpawner
+api: 4.0.0
+author: VennV(hachkingtohach1)
+main: vennv\orespawner\Main
+version: 1.0.0
+
+commands:
+  orespawner:
+    alias: ["osp", "os"]
+    description: "Main command for OreSpawner"
+    permission: "orespawner.command"
+
+permissions:
+    orespawner.command:
+      description: "Permission to use the OreSpawner command."
+      default: true
+    orespawner.command.give:
+      description: "Permission to use the OreSpawner command."
+      default: op
