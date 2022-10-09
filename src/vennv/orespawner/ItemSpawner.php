@@ -26,9 +26,18 @@ namespace vennv\orespawner;
 
 use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
+use pocketmine\player\Player;
 
 final class ItemSpawner {
 
+    /**
+     * @param string $level
+     * @param int $count
+     * 
+     * @return Item
+     * 
+     * get item spawner
+     */
     public static function getItemSpawner(string $level, int $count) : Item {
         $item = (new ItemFactory())->get(
             Main::getInstance()->getConfig()->getNested("settings.item.id"),
@@ -41,5 +50,19 @@ final class ItemSpawner {
         ]);
         $item->getNamedTag()->setString("OreSpawner", $level);
         return $item;
+    }
+
+    /**
+     * @param Player $player
+     * 
+     * @return string
+     *
+     * get level of spawner
+     */
+    public static function getLevelSpawner(Player $player) : string|null {
+        if ($player->getInventory()->getItemInHand()->getNamedTag()->getTag("OreSpawner") !== null) {
+            return $player->getInventory()->getItemInHand()->getNamedTag()->getString("OreSpawner");
+        }
+        return null;
     }
 }
