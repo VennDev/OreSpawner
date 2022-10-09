@@ -31,9 +31,7 @@ class OreSpawnerTask extends Task {
 
     private static array $delay = [];
 
-    public function __construct(
-        private Main $plugin
-    ) {}
+    public function __construct() {}
 
     public function onRun() : void {
         $config = Provider::getConfig();

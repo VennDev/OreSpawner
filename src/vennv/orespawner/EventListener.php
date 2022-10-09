@@ -32,9 +32,7 @@ use pocketmine\event\block\BlockPlaceEvent;
 
 class EventListener implements Listener {
 
-    public function __construct(
-        private Main $plugin
-    ) {}
+    public function __construct() {}
 
     /**
      * @param BlockBreakEvent $event

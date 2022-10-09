@@ -45,8 +45,8 @@ class Main extends PluginBase implements Listener {
     public function onEnable() : void {
         self::$instance = $this;
         Provider::init();
-        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
-        $this->getScheduler()->scheduleRepeatingTask(new OreSpawnerTask($this), 20);
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
+        $this->getScheduler()->scheduleRepeatingTask(new OreSpawnerTask(), 20);
     }
 
     /**
