@@ -15,3 +15,14 @@
         give <type> <count>  - To give item orespawner
         remove               - To join mode remove a orespawner
 ```
+
+# Permission
+```
+permissions:
+    orespawner.command:
+      description: "Permission to use the OreSpawner command."
+      default: true
+    orespawner.command.give:
+      description: "Permission to use the OreSpawner command."
+      default: op
+```
