@@ -28,4 +28,3 @@ permissions:
 ```
 # Image 
 <img src="https://github.com/VennDev/images/blob/main/Screenshot_2022-10-09-11-32-55-58_5c8300b655012b1930f2e0a7b81bf6a9.jpg" />
-```
