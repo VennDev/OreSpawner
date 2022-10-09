@@ -45,6 +45,7 @@ class OreSpawnerTask extends Task {
                 $position->getWorld()->isChunkLoaded($position->getFloorX() >> 4, $position->getFloorZ() >> 4)
             ) {
                 $resultData = $config->get($value);
+                if (!$resultData || $resultData == null) return;
                 $delay = $resultData["delay"];
                 $oresData = $resultData["ores"];
                 $choose = $oresData[array_rand($oresData)];
