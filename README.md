@@ -2,3 +2,16 @@
 
 # OreSpawner
 - A plugin OreSpawner for PocketMine-PMMP
+
+# Commands
+```
+    Main command: 
+    
+        /orespawner
+    
+    Sub commands:
+    
+        help                 - To show all commands plugin
+        give <type> <count>  - To give item orespawner
+        remove               - To join mode remove a orespawner
+```
